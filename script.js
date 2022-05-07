@@ -7,3 +7,5 @@ const generetaNumber = () => {
 }
 
 btnGenerate.addEventListener('click', generetaNumber);
+
+//generetaNumber();
