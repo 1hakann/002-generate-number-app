@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #5f98c0;
+    --color-purple: #5d20be;
+    --color-pink: #ca9fd6;
+    --color-warning: rgb(216, 155, 85);
+    --color-orange :#db6400;
+    --color-red :#a84667;
+    --grey: #eee;
+    --dark-grey: #222831;
+    --dark-green: rgb(68, 177, 91);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.container {    
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-body {
+    width: 640px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    text-align: center;
+}
+
+.container-body > * {
+    margin-bottom: 32px;
+}
+
+.app-title {
+    padding: 16px;
+    margin: 0 16px;
+}
+
+.count {
+    font-size: 32px;
+    padding: 16px;
+    margin: 0 16px;
+    font-weight: 700;
+}
+
+.container-footer button {
+    padding: 16px;
+    margin: 0 16px;
+    border-radius: 3px;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-subtract {
+    background-color: var(--color-red);
+}
+
+.btn-reset {
+    background-color: var(--white);
+    color: var(--black) !important;
+}
+
+.btn-add {
+    background-color: var(--dark-green);
+}
+
+.btn-text {
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .container-footer button {
+        padding: 6px;
+        margin: 0 6px;
+    }
+    .btn-text {
+        font-size: 16px;
+    }
+    .fas {
+        font-size: 16px;
+    }
+}
